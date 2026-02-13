@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ABC Fitness Studio | Classes</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+<header>
+  <img src="images/abc-fitness-logo.png" alt="ABC Fitness Studio Logo">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Classes</a>
+    <a href="about.html">About</a>
+    <a href="community.html">Community</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Our Classes</h1>
+
+  <button onclick="viewCart()">View Cart</button>
+
+  <table>
+    <tr>
+      <th>Class</th>
+      <th>Description</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td>Strength Training</td>
+      <td>Build muscle and endurance</td>
+      <td>
+        <button onclick="addToCart('Strength Training')">Add to Cart</button>
+      </td>
+    </tr>
+    <tr>
+      <td>HIIT</td>
+      <td>High-intensity interval training</td>
+      <td>
+        <button onclick="addToCart('HIIT')">Add to Cart</button>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+  <button onclick="clearCart()">Clear Cart</button>
+  <button onclick="processOrder()">Process Order</button>
+</main>
+
+<footer>
+  <button onclick="subscribe()">Subscribe</button>
+</footer>
+</body>
+</html>

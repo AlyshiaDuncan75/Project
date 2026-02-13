@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ABC Fitness Studio | About Us</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+<header>
+  <img src="images/abc-fitness-logo.png" alt="ABC Fitness Studio Logo">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Classes</a>
+    <a href="about.html">About</a>
+    <a href="community.html">Community</a>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h1>About ABC Fitness Studio</h1>
+    <p>Open Monday–Friday: 6am–9pm<br>Saturday: 8am–4pm</p>
+  </section>
+  <form onsubmit="submitForm(event)">
+  <label>Name:</label>
+  <input type="text" id="name" required>
+
+  <label>Email:</label>
+  <input type="email" id="email" required>
+
+  <label>Custom Order / Message:</label>
+  <textarea id="message" required></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
+  <section>
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+      <label>Name:</label>
+      <input type="text" required>
+
+      <label>Email:</label>
+      <input type="email" required>
+
+      <label>Message:</label>
+      <textarea required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <button onclick="subscribe()">Subscribe</button>
+</footer>
+</body>
+</html>
